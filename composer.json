@@ -1,0 +1,20 @@
+{
+    "name": "bedri/config",
+    "description": "Simple config DB manager",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jaroslav Bedri",
+            "email": "sidha2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Config\\": "src/"
+        }
+    }
+}
