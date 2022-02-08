@@ -27,7 +27,9 @@ class ConfigContr extends Config {
      *  return ID of new config
      */
     public function createConfig(): int {
-        return $this->initialConfig(0, true);
+        $newId = $this->initialConfig(0, true);
+        $this->loadConfig($newId);
+        return $newId;
     }
 
 
