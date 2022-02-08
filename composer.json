@@ -1,0 +1,27 @@
+{
+    "name": "bedri/config",
+    "description": "Simple config DB manager",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jaroslav Bedri",
+            "email": "sidha2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "url": "https://github.com/Sidha2/Db.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "bedri/db": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Config\\": "src/"
+        }
+    }
+}
