@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Config
-Simple config DB manager
-=======
 # Config manager
 Basic Config usage, creating and sync rows across of ID
 
