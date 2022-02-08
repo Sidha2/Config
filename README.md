@@ -17,6 +17,7 @@ $dbname = 'test';
 $port   = 3306;
 
 # items to create
+# - for create new items just add it to this array, after bot is loaded they will be created
 $botConfigRows = [
     "bot_name"          => "This is my name",
     "exchange"          => "bitfinex",
@@ -39,8 +40,16 @@ $newConfigId = $cfg->createConfig();
 # load config
 $cfg->loadConfig($newConfigId);
 
+# set property
+$cfg->__set('bot_name', 'Hello World!');
 
+# get some property
+echo $cfg->__get('bot_name');
+
+#get all properties
 print_r($cfg->getAllConfigRows());
+
+# get Config ID
 print_r($cfg->getItemId());
 
 
