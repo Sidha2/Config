@@ -34,11 +34,11 @@ $botConfigTabData = [
 # create Object
 $cfg = new ConfigContr($botConfigTabData);
 
-# create new config
-$newConfigId = $cfg->createConfig();
+# create new config (also load new id)
+$cfg->createConfig();
 
 # load config
-$cfg->loadConfig($newConfigId);
+$cfg->loadConfig(1);
 
 # set property
 $cfg->__set('bot_name', 'Hello World!');
