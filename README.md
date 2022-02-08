@@ -51,11 +51,4 @@ print_r($cfg->getAllConfigRows());
 
 # get Config ID
 print_r($cfg->getItemId());
-
-
-
-
-
-
 ```
->>>>>>> dev
